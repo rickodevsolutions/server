@@ -12,4 +12,6 @@ services:
       password: ${ADMIN_PASSWORD}
     restart: always
     volumes:
-      - ./database/expose.db:/root/.expose
+      - expose_data:/root/.expose
+volumes:
+  expose_storage:      
